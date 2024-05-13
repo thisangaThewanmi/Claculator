@@ -1,0 +1,61 @@
+ body {
+    height: 100%;
+    margin: 0;
+}
+
+#calBody{
+    width: 26vw;
+    height: 95vh;
+    background: #252425;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+#NumberPanel{
+    width: 23vw;
+    height: 420px;
+    border-radius: 20px;
+    margin: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px 19px;
+
+
+}
+
+#NumberPanel>div>h3{
+    justify-self: center; /* Center horizontally */
+    align-self: center; /* Center vertically */
+    text-align: center; /* Center text */
+    font-size: 22px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#TextArea{
+ width: 23vw;
+ height: 17vh;
+ background: #2F2D2FFF;
+ margin: 24px;
+ border-radius: 20px;
+
+}
+
+#NumberPanel>div{
+ border-radius: 50px;
+ background: #2F2D2FFF;
+
+}
+
+#NumberPanel>div:hover{
+    box-shadow: rgb(181, 103, 182) 1px -3px 14px;
+    background: rgba(75, 73, 73, 0.44);
+}
+
+ #NumberPanel>div>h3.signs{
+    color: #872de2;
+}
+
