@@ -14,97 +14,107 @@
 
 <div id="calBody">
 
-    <div id="TextArea">
+    <!--<form>
+        <div  class="display">
+            <input  id="TextArea" type="text" name="display">
+        </div>
+    </form>-->
 
-    </div>
+<input id="display"  readonly>
+
+
 
 
     <div id="NumberPanel">
 
         <div>
-            <h3 class="signs">C</h3>
+            <h3 onclick=" clearDisplay()" class="signs">C</h3>
         </div>
 
         <div>
-            <h3 class="signs">DE</h3>
+            <h3 class="signs"  onclick="appendToDisplay('DE')">DE</h3>
         </div>
 
         <div>
-            <h3 class="signs" >%</h3>
+            <h3 class="signs"  onclick="appendToDisplay('%')" >%</h3>
         </div>
 
         <div>
-            <h3 class="signs">+</h3>
+            <h3 class="signs"  onclick="appendToDisplay('+')">+</h3>
         </div>
 
         <div>
-            <h3>7</h3>
+            <h3  onclick="appendToDisplay('7')">7</h3>
         </div>
 
         <div>
-            <h3>8</h3>
+            <h3  onclick="appendToDisplay('8')">8</h3>
         </div>
 
         <div>
-            <h3>9</h3>
+            <h3  onclick="appendToDisplay('9')">9</h3>
         </div>
 
         <div>
-            <h3 class="signs" >-</h3>
+            <h3 class="signs"  onclick="appendToDisplay('-')" >-</h3>
         </div>
 
         <div>
-            <h3>4</h3>
+            <h3  onclick="appendToDisplay('4')">4</h3>
         </div>
 
         <div>
-            <h3>5</h3>
+            <h3  onclick="appendToDisplay('5')">5</h3>
         </div>
 
         <div>
-            <h3>6</h3>
+            <h3  onclick="appendToDisplay('6')">6</h3>
         </div>
 
         <div>
-            <h3 class="signs">x</h3>
+            <h3 class="signs"  onclick="appendToDisplay('X')">X</h3>
         </div>
 
         <div>
-            <h3>1</h3>
+            <h3  onclick="appendToDisplay('1')">1</h3>
         </div>
 
         <div>
-            <h3>2</h3>
+            <h3  onclick="appendToDisplay('2')">2</h3>
         </div>
 
         <div>
-            <h3>3</h3>
+            <h3  onclick="appendToDisplay('3')">3</h3>
         </div>
 
         <div>
-            <h3 class="signs">/</h3>
+            <h3 class="signs"  onclick="appendToDisplay('/')">/</h3>
         </div>
 
         <div>
-            <h3>00</h3>
+            <h3  onclick="appendToDisplay('00')">00</h3>
         </div>
 
         <div>
-            <h3>0</h3>
+            <h3  onclick="appendToDisplay('0')" id="0">0</h3>
         </div>
 
         <div>
-            <h3 class="signs">.</h3>
+            <h3 class="signs"  onclick="appendToDisplay('.')">.</h3>
         </div>
 
         <div>
-            <h3 class="signs" >=</h3>
+            <h3 class="signs"   onclick="calculate()">=</h3>
         </div>
 
 
     </div>
 
 </div>
+
+
+<script src="assests/lib/jquery-3.7.1.min.js"></script>
+<script src="javaScript.js"></script>
 
 </body>
 </html>
