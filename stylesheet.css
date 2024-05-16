@@ -94,6 +94,10 @@
          height: 420px;
      }
 
+     #NumberPanel>div{
+         background: #3f3d3f;
+     }
+
          /* You can add more styles as needed */
  }
 
