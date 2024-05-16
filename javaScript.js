@@ -51,3 +51,51 @@ function calculate() {
     }
 }
 
+
+/*
+ function dleteLastIndex(){
+    var array = [];
+    console.log(array);
+    var display =$('#display').val();
+    console.log("display:"+display);
+
+    array.push(display);
+    console.log("array"+ array);
+    var length = array.length;
+    console.log(length+"length");
+
+
+ }
+*/
+
+
+function dleteLastIndex() {
+    var display = $('#display').val();  // Retrieve the current value
+    console.log("display:" + display);
+
+    if (display.length > 0) {
+        display = display.slice(0, -1);  // Remove the last character
+        $('#display').val(display);  // Update the input field with the modified value
+        console.log("Updated display:" + display);
+    } else {
+        console.log("Display is already empty.");
+    }
+}
+
+
+function calculatePercentage() {
+    var display = $('#display').val();  // Retrieve the current value
+    console.log("display:" + display);
+
+    if (display.length > 0 && !isNaN(display)) {
+        var number = parseFloat(display);  // Convert to number
+        var percentage = number / 100;  // Calculate percentage
+        $('#display').val(percentage);  // Update the input field with the modified value
+        console.log("Updated display with percentage:" + percentage);
+    } else {
+        console.log("Display is empty or not a number.");
+    }
+}
+
+
+

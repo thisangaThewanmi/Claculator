@@ -41,6 +41,10 @@
  background: #2F2D2FFF;
  margin: 24px;
  border-radius: 20px;
+    border:  3px solid #252425;
+
+
+
 
 }
 
@@ -55,6 +59,10 @@
     background: rgba(75, 73, 73, 0.44);
 }
 
+ #NumberPanel>div:active{
+     box-shadow: rgb(74, 23, 75) 1px -3px 14px;
+ }
+
  #NumberPanel>div>h3.signs{
     color: #872de2;
 }
@@ -63,5 +71,29 @@
     text-align: right;
      font-size: 34px;
      color: white;
+ }
+
+
+ @media (max-width: 500px) {
+     /* Add your styles here */
+
+     #display {
+         width:87vw;
+
+     }
+
+     #calBody{
+         margin:0px;
+         width:100vw;
+         height: 100vh;
+         border-radius: 0px;
+     }
+
+     #NumberPanel {
+         width: 90vw;
+         height: 420px;
+     }
+
+         /* You can add more styles as needed */
  }
 
